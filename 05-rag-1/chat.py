@@ -27,7 +27,6 @@ search_results = vector_db.similarity_search(
 )
 
 
-
 context = "\n\n".join(
     [
         f"Page content: {result.page_content}\nPage number: {result.metadata.get('page_number')}\nFile Location: {result.metadata.get('source')}\n"

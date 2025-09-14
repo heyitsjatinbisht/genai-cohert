@@ -6,7 +6,7 @@ app = FastAPI()
 
 
 @app.get("/")
-def chat():
+def a():
     return {"status": "Server is up and running"}
 
 

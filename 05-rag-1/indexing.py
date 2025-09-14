@@ -7,7 +7,7 @@ from langchain_qdrant import QdrantVectorStore
 
 load_dotenv()
 
-pdf_path =Path(__file__).parent / "annual.pdf"
+pdf_path = Path(__file__).parent / "annual.pdf"
 
 
 # loading
@@ -21,7 +21,7 @@ docs = loader.load()
 text_splitter = RecursiveCharacterTextSplitter(
     chunk_size=1000,
     chunk_overlap=200
-    )
+)
 
 
 split_docs = text_splitter.split_documents(documents=docs)
